@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"mic\startup_stm32f103xb.o"
+"mic\main.o"
+"mic\gpio.o"
+"mic\tim.o"
+"mic\usart.o"
+"mic\stm32f1xx_it.o"
+"mic\stm32f1xx_hal_msp.o"
+"mic\lsyt201b.o"
+"mic\stm32f1xx_hal_gpio_ex.o"
+"mic\stm32f1xx_hal_tim.o"
+"mic\stm32f1xx_hal_tim_ex.o"
+"mic\stm32f1xx_hal.o"
+"mic\stm32f1xx_hal_rcc.o"
+"mic\stm32f1xx_hal_rcc_ex.o"
+"mic\stm32f1xx_hal_gpio.o"
+"mic\stm32f1xx_hal_dma.o"
+"mic\stm32f1xx_hal_cortex.o"
+"mic\stm32f1xx_hal_pwr.o"
+"mic\stm32f1xx_hal_flash.o"
+"mic\stm32f1xx_hal_flash_ex.o"
+"mic\stm32f1xx_hal_exti.o"
+"mic\stm32f1xx_hal_uart.o"
+"mic\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "MIC\MIC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MIC.map" -o MIC\MIC.axf
